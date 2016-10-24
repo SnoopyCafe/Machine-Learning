@@ -9,7 +9,8 @@
 
 from prep_terrain_data import makeTerrainData
 from class_vis import prettyPicture, output_image
-from ClassifyNB import classify
+#from ClassifyNB import classify
+from ClassifySVM import classify
 
 import numpy as np
 import pylab as pl
