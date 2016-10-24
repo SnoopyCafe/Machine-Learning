@@ -12,6 +12,7 @@ def classify(features_train, labels_train, features_test, labels_test):
     clf = GaussianNB()
     clf.fit(features_train, labels_train)
     pred = clf.predict(features_test)
+    print pred
     print ( "accuracy {:.3f}".format(accuracy_score(pred, labels_test)))
     ### accuracy = no. of points classified correctly / all points (in test set)
     return clf
