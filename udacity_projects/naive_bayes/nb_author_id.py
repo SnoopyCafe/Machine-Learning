@@ -29,6 +29,13 @@ from sklearn.metrics import accuracy_score
 
 clf = GaussianNB()
 t0 = time()
+
+### One way to speed up an algorithm is to train it on a smaller training dataset.
+### The tradeoff is that the accuracy almost always goes down when you do this.
+
+#features_train = features_train[:len(features_train)/100]
+#labels_train = labels_train[:len(labels_train)/100]
+
 clf.fit(features_train, labels_train)
 print "training time:", round(time()-t0, 3), "s"
 
