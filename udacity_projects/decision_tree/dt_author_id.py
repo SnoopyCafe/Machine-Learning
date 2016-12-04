@@ -26,7 +26,6 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 from sklearn import tree
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import accuracy_score
 from class_vis import prettyPicture, output_image
 
 t0 = time()
